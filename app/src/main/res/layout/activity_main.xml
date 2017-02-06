@@ -8,18 +8,32 @@
     android:background="#eeeeee">
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:id="@+id/RecyclerView"></android.support.v7.widget.RecyclerView>
     <View
         android:layout_width="match_parent"
-        android:layout_height="6dp"
+        android:layout_height="2dp"
         android:layout_below="@id/RecyclerView"
         android:id="@+id/dividingLine"
         android:background="#b71c1c"
-        android:layout_margin="8dp"/>
+        android:layout_margin="4dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/dividingLine"
+        android:id="@+id/VerticalRecyclerView"></android.support.v7.widget.RecyclerView>
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:layout_below="@id/VerticalRecyclerView"
+    android:id="@+id/dividingLine2"
+    android:background="#b71c1c"
+    android:layout_margin="4dp"/>
+
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/dividingLine"
-        android:id="@+id/VerticalRecyclerView"></android.support.v7.widget.RecyclerView>
-    </RelativeLayout>
+        android:layout_below="@id/dividingLine2"
+        android:id="@+id/GridRecyclerView"
+        android:layout_marginBottom="4dp"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>
